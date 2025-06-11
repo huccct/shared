@@ -1,638 +1,1007 @@
 ---
-# You can also start simply with 'default'
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
+background: https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80
+title: Introduction to Git
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## Introduction to Git
+  A comprehensive guide to version control with Git
 
-  Learn more at [Sli.dev](https://sli.dev)
-# apply unocss classes to the current slide
+  University of St Andrews
 class: text-center
-# https://sli.dev/features/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
+transition: fade-out
 mdc: true
-# open graph
-# seoMeta:
-#  ogImage: https://cover.sli.dev
 ---
 
-# Welcome to Slidev
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-90 z-50" />
 
-Presentation slides for developers
+<div class="mt-5" />
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
+# Introduction to Git
+
+**Version Control Made Simple**
+
+<div class="pt-12">
+  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover:bg="white op-10">
+    Let's dive in! <carbon:arrow-right class="inline"/>
+  </span>
 </div>
 
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
+<div class="abs-br m-6 flex gap-2">
+  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 hover:opacity-100">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
+  <a href="https://github.com/git/git" target="_blank" alt="Git Repository" title="Git Repository" class="text-xl slidev-icon-btn opacity-50 hover:opacity-100">
     <carbon:logo-github />
   </a>
 </div>
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
----
-transition: fade-out
 ---
 
-# What is Slidev?
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+<div class="mt-5" />
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
+# What is Git?
+
+Git is a **distributed version control system** that tracks changes in files and coordinates work among multiple people.
+
+<v-clicks>
+
+- 🗂️ **Track Changes** - Keep a complete history of your project
+- 🤝 **Collaborate** - Work with others without conflicts
+- 🔄 **Branching** - Experiment safely with parallel development
+- 🛡️ **Backup** - Never lose your work again
+- ⚡ **Fast** - Designed for speed and efficiency
+- 🌐 **Distributed** - Every copy is a complete backup
+
+</v-clicks>
+
 <br>
-<br>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+<v-click>
 
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
+Created by **Linus Torvalds** in 2005 for Linux kernel development, Git has become the standard for version control across the software industry.
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
-
----
-transition: slide-up
-level: 2
----
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
-
-## Keyboard Shortcuts
-
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
-
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+</v-click>
 
 ---
 layout: two-cols
 layoutClass: gap-16
 ---
 
-# Table of contents
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
 
-You can use the `Toc` component to generate a table of contents for your slides:
+<div class="mt-5" />
 
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
+# Why Use Version Control?
 
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+<v-clicks>
+
+**Without Git:**
+
+- `final_project.docx`
+- `final_project_v2.docx`
+- `final_project_FINAL.docx`
+- `final_project_FINAL_REALLY.docx`
+- `final_project_DONT_TOUCH.docx`
+
+**Problems:**
+
+- Which is the latest?
+- What changed between versions?
+- How to merge team changes?
+- Lost work when files get corrupted
+
+</v-clicks>
 
 ::right::
 
-<Toc text-sm minDepth="1" maxDepth="2" />
+<v-clicks>
 
----
-layout: image-right
-image: https://cover.sli.dev
----
+**With Git:**
 
-# Code
+- Single project folder
+- Complete change history
+- Meaningful commit messages
+- Easy collaboration
+- Automatic merging
+- Branch experiments
 
-Use code snippets and get the highlighting directly, and even types hover!
+**Benefits:**
 
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
+- Track who changed what and when
+- Revert to any previous state
+- Work simultaneously without conflicts
+- Experiment safely with branches
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
----
-level: 2
----
-
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
+</v-clicks>
 
 ---
 
-# Components
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
 
-<div grid="~ cols-2 gap-4">
+<div class="mt-5" />
+
+# Git Workflow Overview
+
+<div class="mt-8">
+
+```mermaid {scale: 0.8}
+graph LR
+    WD[Working Directory] -->|git add| SA[Staging Area]
+    SA -->|git commit| LR[Local Repository]
+    LR -->|git push| RR[Remote Repository]
+    RR -->|git pull/fetch| LR
+    LR -->|git checkout| WD
+
+    style WD fill:#ffeb3b
+    style SA fill:#ff9800
+    style LR fill:#4caf50
+    style RR fill:#2196f3
+```
+
+</div>
+
+<v-clicks>
+
+- **Working Directory**: Your current files
+- **Staging Area**: Changes ready to commit
+- **Local Repository**: Your version history
+- **Remote Repository**: Shared repository (GitHub, GitLab, etc.)
+
+</v-clicks>
+
+---
+
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+
+
+# Essential Git Commands
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+
 <div>
 
-You can use Vue components directly inside your slides.
+## Repository Setup
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
+```bash
+# Initialize a new repository
+git init
+# Clone existing repository
+git clone <url>
+# Check repository status
+git status
 ```
 
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
+## Making Changes
 
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+```bash
+# Add files to staging
+git add <file>
+git add .
+# Commit changes
+git commit -m "message"
+# View commit history
+git log
+```
 
 </div>
+
 <div>
 
-```html
-<Tweet id="1390115482657726468" />
+## Remote Operations
+
+```bash
+# Add remote repository
+git remote add origin <url>
+# Push changes
+git push origin main
+# Pull latest changes
+git pull origin main
+# Fetch without merging
+git fetch
 ```
 
-<Tweet id="1390115482657726468" scale="0.65" />
+## Branching
 
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
+```bash
+# Create new branch
+git branch <name>
+# Switch branches
+git checkout <branch>
+# Create and switch
+git checkout -b <branch>
 ```
 
 </div>
 
-<br>
+</div>
+
+---
+
+
+---
+layout: default
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top-2 left-4 w-16 h-16 opacity-80 z-50" />
+
+# Your First Git Repository
+
+Let's create your first repository step by step:
+
+<div class="overflow-y-auto max-h-[60vh] mt--10">
+
+<v-clicks>
+
+- **Initialize the repository**
+
+  ```bash
+  mkdir my-first-repo
+  cd my-first-repo
+  git init
+  ```
+
+- **Create your first file**
+
+  ```bash
+  echo "# My First Project" > README.md
+  ```
+
+- **Add and commit**
+
+  ```bash
+  git add README.md
+  git commit -m "Initial commit: Add README"
+  ```
+
+- **Check what happened**
+
+  ```bash
+  git log --oneline
+  git status
+  ```
+
+</v-clicks>
+</div>
+
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Understanding Git States
+
+<div class="mt-8">
+
+```mermaid {scale: 0.9}
+graph TD
+    A[Untracked Files] -->|git add| B[Staged Files]
+    B -->|git commit| C[Committed Files]
+    C -->|edit files| D[Modified Files]
+    D -->|git add| B
+    D -->|git checkout| C
+    B -->|git reset| D
+
+    style A fill:#ff5722
+    style B fill:#ff9800
+    style C fill:#4caf50
+    style D fill:#2196f3
+```
+
+</div>
+
+<v-clicks>
+
+- **Untracked**: New files Git doesn't know about
+- **Staged**: Changes ready for the next commit
+- **Committed**: Changes saved in repository history
+- **Modified**: Changes made but not staged yet
+
+</v-clicks>
+
+
+---
+layout: two-cols
+layoutClass: gap-16
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Branching Concepts
+
+Branches allow parallel development:
+
+<v-clicks>
+
+```bash
+# Create feature branch
+git checkout -b feature/login
+# Work on feature...
+git add .
+git commit -m "Add login form"
+# Switch back to main
+git checkout main
+# Merge feature
+git merge feature/login
+```
+
+**Why use branches?**
+
+- Isolate features/experiments
+- Collaborate without conflicts
+- Review before merging
+- Keep main branch stable
+
+</v-clicks>
+
+::right::
 
 <v-click>
 
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
+<div class="overflow-y-auto max-h-[60vh] mt--5">
+  <v-click>
 
-```html
-<span v-mark.underline.orange>inline markers</span>
+```mermaid
+graph TD
+    A[main: Initial] --> B[main: Add README]
+    B --> C[feature/login: Add form]
+    C --> D[feature/login: Add validation]
+    B --> E[main: Fix typo]
+    D --> F[main: Merge feature/login]
+    F --> G[main: Release v1.0]
+```
+</v-click>
+</div>
+
+</v-click>
+
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Remote Repositories
+
+Connect your local repository to remote services like GitHub:
+
+<div class="overflow-y-auto max-h-[60vh] mt--5">
+<v-clicks>
+
+1. **Create repository on GitHub**
+  ```bash
+   - Go to github.com → New repository
+   - Choose name and settings
+   - Copy the repository URL
+  ```
+2. **Connect local to remote**
+
+   ```bash
+   git remote add origin https://github.com/username/repo.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+3. **Daily workflow**
+   ```bash
+   git pull origin main    # Get latest changes
+   # ... make changes ...
+   git add .
+   git commit -m "Description"
+   git push origin main    # Share your changes
+   ```
+
+</v-clicks>
+
+
+</div>
+
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Handling Merge Conflicts
+
+When Git can't automatically merge changes:
+
+<div class="overflow-y-auto max-h-[60vh] mt--5">
+
+<v-clicks>
+
+**Conflict example:**
+
+```txt
+< < < HEAD
+console.log("Hello from main branch");
+= = =
+console.log("Hello from feature branch");
+> > > feature-branch
+```
+
+**Resolution steps:**
+
+1. **Identify conflicts** - Git marks them in files
+2. **Edit files** - Choose which changes to keep
+3. **Remove markers** - Delete conflict indicators
+4. **Stage resolved files** - `git add conflicted-file.js`
+5. **Complete merge** - `git commit`
+
+
+</v-clicks>
+</div>
+
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Best Practices
+
+<div class="grid grid-cols-2 gap-8 mt--2">
+
+<div>
+
+## Commit Messages
+
+<v-clicks>
+
+✅ **Good commits:**
+
+```
+Add user authentication system
+Fix memory leak in data processor
+Update README with installation steps
+```
+
+❌ **Bad commits:**
+
+```
+fix
+updated stuff
+asdf
+```
+
+</v-clicks>
+
+</div>
+
+<div>
+
+## General Guidelines
+
+<v-clicks>
+
+- **Commit often** - Small, logical changes
+- **Write clear messages** - Explain what and why
+- **Use branches** - Keep main stable
+- **Review before merging** - Use pull requests
+- **Keep history clean** - Avoid unnecessary merges
+- **Use .gitignore** - Don't track generated files
+
+</v-clicks>
+
+</div>
+
+</div>
+
+<v-click>
+
+### Commit Message Format
+
+```
+<type>: <subject>
+
+```
+
+**Types:** feat, fix, docs, style, refactor, test, chore
+
+</v-click>
+
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Essential .gitignore
+
+Always ignore files that shouldn't be tracked:
+
+```bash
+# Dependencies
+node_modules/
+venv/
+.env
+
+# Build outputs
+dist/
+build/
+*.exe
+*.o
+
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+
+# Logs
+*.log
+logs/
+
+
+# Temporary files
+*.tmp
+*.temp
+```
+
+<v-click>
+
+**Pro tip:** Use [gitignore.io](https://gitignore.io) to generate .gitignore files for your technology stack!
+
+</v-click>
+
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Useful Git Commands
+
+<div class="grid grid-cols-2 gap-8 mt-6">
+
+<div>
+
+## History & Information
+
+```bash
+# View commit history
+git log --oneline --graph
+# Show changes in commit
+git show <commit-hash>
+# View file history
+git log -p <filename>
+# See who changed what
+git blame <filename>
+# Find commits by message
+git log --grep="bug fix"
+```
+
+</div>
+
+<div>
+
+## Undoing Changes
+
+```bash
+# Undo unstaged changes
+git checkout -- <filename>
+# Unstage files
+git reset HEAD <filename>
+# Undo last commit (keep changes)
+git reset --soft HEAD~1
+# Undo last commit (discard changes)
+git reset --hard HEAD~1
+# Create new commit that undoes
+git revert <commit-hash>
+```
+
+  </div>
+
+  </div>
+
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Git Hosting Platforms
+
+<div class="grid grid-cols-3 gap-8 mt-8">
+
+<div class="text-center">
+
+### GitHub
+
+<div class="text-6xl mx-auto mb-4">🐙</div>
+
+- **Most popular**
+- Free public/private repos
+- Great for open source
+- Excellent CI/CD integration
+- Strong community features
+
+</div>
+
+<div class="text-center">
+
+### GitLab
+
+<div class="text-6xl mx-auto mb-4">🦊</div>
+
+- **DevOps focused**
+- Built-in CI/CD
+- Self-hosted options
+- Integrated project management
+- Strong enterprise features
+
+</div>
+
+<div class="text-center">
+
+### Bitbucket
+
+<div class="text-6xl mx-auto mb-4">🪣</div>
+
+- **Atlassian ecosystem**
+- Integrates with Jira
+- Good for teams using Atlassian
+- Unlimited private repos
+- Built-in CI/CD
+
+</div>
+
+</div>
+
+---
+layout: two-cols
+layoutClass: gap-16
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Git vs Other VCS
+
+<v-clicks>
+
+**Git Advantages:**
+
+- Distributed (every clone is complete)
+- Incredibly fast
+- Excellent branching/merging
+- Strong community support
+- Industry standard
+
+**Centralized VCS (SVN, Perforce):**
+
+- Single point of failure
+- Requires server connection
+- Limited offline capabilities
+- Simpler model for some teams
+
+</v-clicks>
+
+::right::
+
+<v-click>
+
+**Git vs SVN Workflow:**
+
+```mermaid {scale: 0.6}
+graph TD
+    subgraph "Git (Distributed)"
+        A1[Developer A] --> B1[Local Repo A]
+        A2[Developer B] --> B2[Local Repo B]
+        B1 --> C1[Remote Repo]
+        B2 --> C1
+        C1 --> B1
+        C1 --> B2
+    end
+
+    subgraph "SVN (Centralized)"
+        D1[Developer A] --> E1[Central Server]
+        D2[Developer B] --> E1
+        E1 --> D1
+        E1 --> D2
+    end
 ```
 
 </v-click>
 
-<div mt-20 v-click>
+---
 
-[Learn more](https://sli.dev/guide/animations#click-animation)
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Advanced Git Features
+
+<div class="grid grid-cols-2 gap-8 mt-6">
+
+<div>
+
+## Git Stash
+
+<v-clicks>
+
+Temporarily save uncommitted changes:
+
+```bash
+# Save current changes
+git stash
+# Apply latest stash
+git stash pop
+# List all stashes
+git stash list
+# Apply specific stash
+git stash apply stash@{1}
+```
+
+**Use cases:**
+
+- Quick branch switching
+- Pulling with uncommitted changes
+- Temporary experiments
+
+</v-clicks>
+
+</div>
+
+<div>
+
+## Git Tags
+
+<v-clicks>
+
+Mark important points in history:
+
+```bash
+# Create lightweight tag
+git tag v1.0.0
+# Create annotated tag
+git tag -a v1.0.0 -m "Version 1.0"
+# Push tags to remote
+git push origin --tags
+# List tags
+git tag -l
+```
+
+**Use cases:**
+
+- Release versions
+- Milestones
+- Deployment markers
+
+</v-clicks>
+
+</div>
 
 </div>
 
 ---
 
-# Motions
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
 
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
+<div class="mt-5" />
 
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
+# Git Aliases & Configuration
+
+Make Git more convenient with aliases:
+
+<v-clicks>
+
+```bash
+# Set up useful aliases
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.unstage 'reset HEAD --'
+git config --global alias.last 'log -1 HEAD'
+git config --global alias.visual '!gitk'
+# Configure your identity
+git config --global user.name "Your Name"
+git config --global user.email "your.email@st-andrews.ac.uk"
+# Set default editor
+git config --global core.editor "code --wait"
+# Enable colored output
+git config --global color.ui auto
 ```
 
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
+Now you can use `git st` instead of `git status`!
+
+</v-clicks>
+
+---
+
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
+
+<div class="mt-5" />
+
+# Common Git Mistakes & Solutions
+
+<div class="grid grid-cols-2 gap-6 mt-6">
+
+<div>
+
+### Mistake: Wrong commit message
+
+```bash
+# Fix last commit message
+git commit --amend -m "Correct message"
+```
+
+### Mistake: Forgot to add file
+
+```bash
+# Add file to last commit
+git add forgotten-file.txt
+git commit --amend --no-edit
+```
+
+### Mistake: Committed to wrong branch
+
+```bash
+# Move commits to new branch
+git checkout -b correct-branch
+git checkout wrong-branch
+git reset --hard HEAD~1
+```
+
   </div>
 
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
+<div>
 
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
+### Mistake: Accidentally deleted file
 
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
+```bash
+# Restore from last commit
+git checkout HEAD -- deleted-file.txt
 ```
 
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+### Mistake: Want to uncommit changes
+
+```bash
+# Keep changes but uncommit
+git reset --soft HEAD~1
+# Discard changes and uncommit
+git reset --hard HEAD~1
 ```
 
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
+### Mistake: Merge conflict panic
 
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
+```bash
+# Abort merge and start over
+git merge --abort
 ```
 
 </div>
 
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
+</div>
 
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
 
-# Draggable Elements
 
-Double-click on the draggable elements to edit their positions.
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="mx-auto w-32 h-32 mb-8 opacity-90" />
 
-<br>
+<div class="mt-5" />
 
-###### Directive Usage
+# Let's Practice!
 
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
+<div class="text-left max-w-2xl mx-auto">
 
-<br>
+## Quick Exercise
 
-###### Component Usage
+<v-clicks>
 
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
+1. **Create a new repository** for a simple project
+2. **Add some files** (README.md, index.html, style.css)
+3. **Make several commits** with good messages
+4. **Create a feature branch** and add a new feature
+5. **Merge back to main** and handle any conflicts
+6. **Push to GitHub** and explore the interface
 
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
+</v-clicks>
 
-<img v-drag="'square'" src="https://sli.dev/logo.png">
+<v-click>
 
-###### Draggable Arrow
+### Remember:
 
-```md
-<v-drag-arrow two-way />
-```
+- **Start small** - Master basics before advanced features
+- **Practice regularly** - Git becomes second nature
+- **Don't fear mistakes** - Almost everything is recoverable
+- **Use GUI tools** if needed (GitKraken, SourceTree, VS Code)
 
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
+</v-click>
 
----
-src: ./pages/imported-slides.md
-hide: false
----
+</div>
 
 ---
 
-# Monaco Editor
+---
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="fixed top--5 left-4 w-26 h-26 opacity-80 z-50" />
 
-Slidev provides built-in Monaco Editor support.
+<div class="mt-5" />
 
-Add `{monaco}` to the code block to turn it into an editor:
+# Additional Resources
 
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
+<div class="grid grid-cols-2 gap-8 mt-8">
 
-const arr = ref(emptyArray(10))
-```
+<div>
 
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
+## Learning Resources
 
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
+- **[Pro Git Book](https://git-scm.com/book)** - Free, comprehensive guide
+- **[GitHub Learning Lab](https://lab.github.com/)** - Interactive tutorials
+- **[Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)** - Excellent explanations
+- **[Oh Shit, Git!](https://ohshitgit.com/)** - Fix common mistakes
+- **[Learn Git Branching](https://learngitbranching.js.org/)** - Visual interactive tutorial
 
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
+## Tools & GUIs
+
+- **[GitHub Desktop](https://desktop.github.com/)** - Simple GUI
+- **[GitKraken](https://www.gitkraken.com/)** - Powerful visual client
+- **[SourceTree](https://www.sourcetreeapp.com/)** - Free Atlassian GUI
+- **VS Code** - Built-in Git support
+
+</div>
+
+<div>
+
+## Cheat Sheets
+
+- **[Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)** - GitHub's official
+- **[Atlassian Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)** - Comprehensive reference
+
+## University Resources
+
+- **St Andrews GitLab** - Internal code hosting
+- **Computing Support** - Help with setup
+- **CS Department** - Advanced workshops
+- **Library Digital Skills** - Version control workshops
+
+## Practice Platforms
+
+- **[Codecademy Git Course](https://www.codecademy.com/learn/learn-git)**
+- **[Katacoda Git Scenarios](https://katacoda.com/courses/git)**
+
+</div>
+
+</div>
+---
+
 
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+<img src="https://www.st-andrews.ac.uk/~cdn/dpl/1.27.4/images/furniture/logo-foundation.svg" class="mx-auto w-32 h-32 mb-8 opacity-90" />
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+# Thank You!
 
-<PoweredBySlidev mt-10 />
+## Questions & Discussion
+
+Git is a powerful tool that becomes easier with practice.  
+Start using it for your projects, and don't hesitate to experiment!
+
+<br>
+
+University of St Andrews  
+Introduction to Git Workshop
+
+<br>
+
+[Git Official Website](https://git-scm.com/)
