@@ -11,12 +11,18 @@ importers:
       '@slidev/cli':
         specifier: ^52.1.0
         version: 52.1.0(@babel/parser@7.28.0)(@nuxt/kit@3.18.1)(@types/markdown-it@14.1.2)(@types/node@22.17.1)(@vue/compiler-sfc@3.5.18)(markdown-it-async@2.2.0)(postcss@8.5.6)
+      '@slidev/theme-apple-basic':
+        specifier: ^0.25.1
+        version: 0.25.1
       '@slidev/theme-default':
         specifier: latest
         version: 0.25.0
       '@slidev/theme-seriph':
         specifier: latest
         version: 0.25.0
+      slidev-theme-hep:
+        specifier: ^0.1.1
+        version: 0.1.1
       vue:
         specifier: ^3.5.18
         version: 3.5.18(typescript@5.9.2)
@@ -593,6 +599,10 @@ packages:
 
   '@slidev/rough-notation@0.1.0':
     resolution: {integrity: sha512-a/CbVmjuoO3E4JbUr2HOTsXndbcrdLWOM+ajbSQIY3gmLFzhjeXHGksGcp1NZ08pJjLZyTCxfz1C7v/ltJqycA==}
+
+  '@slidev/theme-apple-basic@0.25.1':
+    resolution: {integrity: sha512-saA5yYui+jTT13tP+QJKnWeM8sK0IA1iln2E3sWAJsfKdQHUD3fw8+AlUHLUH6yc8NPq3ewtZcwWx49a/iF8Tg==}
+    engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
 
   '@slidev/theme-default@0.25.0':
     resolution: {integrity: sha512-iWvthH1Ny+i6gTwRnEeeU+EiqsHC56UdEO45bqLSNmymRAOWkKUJ/M0o7iahLzHSXsiPu71B7C715WxqjXk2hw==}
@@ -2071,6 +2081,9 @@ packages:
   plantuml-encoder@1.4.0:
     resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==}
 
+  plotly.js-dist@2.35.3:
+    resolution: {integrity: sha512-dqB9+FUyBFZN04xWnZoYwaeeF4Jj9T/m0CHYmoozmPC3R4Dy0TRJsHgbRVLPxgYQqodzniVUj17+2wmJuGaZAg==}
+
   points-on-curve@0.2.0:
     resolution: {integrity: sha512-0mYKnYYe9ZcqMCWhUjItv/oHjvgEsfKvnUTg8sAtnHr3GVy7rGkXCb6d5cSyqrWqL4k81b9CPg3urd+T7aop3A==}
 
@@ -2256,6 +2269,10 @@ packages:
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+
+  slidev-theme-hep@0.1.1:
+    resolution: {integrity: sha512-NClEUb4qp993ox4WZJUvxCGF8a850QjMPjJXNLTh6F6qT5mTtmdXbTgguwHRCwn11oDI4Tq/3e24qBqRSgp/LQ==}
+    engines: {node: '>=18.0.0', slidev: '>=0.47.0'}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -3411,6 +3428,12 @@ snapshots:
   '@slidev/rough-notation@0.1.0':
     dependencies:
       roughjs: 4.6.6
+
+  '@slidev/theme-apple-basic@0.25.1':
+    dependencies:
+      '@slidev/types': 0.47.5
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.5
 
   '@slidev/theme-default@0.25.0':
     dependencies:
@@ -5222,6 +5245,8 @@ snapshots:
 
   plantuml-encoder@1.4.0: {}
 
+  plotly.js-dist@2.35.3: {}
+
   points-on-curve@0.2.0: {}
 
   points-on-path@0.2.1:
@@ -5425,6 +5450,13 @@ snapshots:
       totalist: 3.0.1
 
   sisteransi@1.0.5: {}
+
+  slidev-theme-hep@0.1.1:
+    dependencies:
+      '@slidev/types': 0.47.5
+      codemirror-theme-vars: 0.1.2
+      plotly.js-dist: 2.35.3
+      prism-theme-vars: 0.2.5
 
   source-map-js@1.2.1: {}
 
