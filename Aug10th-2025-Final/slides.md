@@ -38,9 +38,7 @@ Good morning/afternoon everyone,
 
 My name is Tunan Chen, and today I'm excited to present ProHelen - a Visual Instruction Builder that transforms how people communicate with AI.
 
-This project was supervised by Dr Abd Alsattar Ardati, and represents my final year dissertation work.
-
-The core question we're addressing is: How can we bridge the gap between what people want to tell AI and what they actually manage to communicate?
+For this project, the core question we're addressing is: How can we bridge the gap between what people want to tell AI and what they actually manage to communicate?
 
 Let's dive into this problem.
 -->
@@ -164,155 +162,100 @@ clicks: 6
 </div>
 
 <!--
-Click 1: Problem Introduction
-Let me start with the fundamental problem we're solving.
+开场 (Click 1 出现时)
+Let me start with the fundamental problem we're solving. Most people struggle to tell AI exactly what they want. Look at this communication gap here - you have a clear idea in your head, but there's this massive disconnect between your intention and what the AI actually delivers.
 
-Most people struggle to tell AI exactly what they want. Look at this communication gap - 
-[指向可视化图表]
-You have a clear idea in your head, but there's this massive disconnect between your intention and what the AI actually delivers.
+问题分析 (Click 2 出现时)
+Why does this happen? Well, there are three main reasons. First, you know what you want but not how to ask for it. Second, you're missing all the specifics - what tone should it use? What format? What constraints? And third, it just becomes this endless cycle of trial and error until something finally works.
 
-Click 2: Problem Details
-Why does this happen? Three main reasons:
+解决方案介绍 (Click 3 出现时)
+So our solution was to make this entire process visual. Think of it like building with LEGO blocks - instead of trying to describe everything in words, you simply drag and drop: Role plus Task plus Rules equals your perfect instruction.
 
-First, you know what you want but don't know how to ask for it. You might want a professional email, but what does "professional" actually mean to an AI?
+优势说明 (Click 4 出现时)
+This gives you three key advantages: you can drag and drop blocks instead of writing from scratch, you see your instruction building up in real-time, and you can save successful combinations as templates for later use.
 
-Second, you're missing the "how" - What tone should it use? What format? What constraints should it follow?
-
-Third, it becomes endless trial and error. You keep typing different versions until something finally works - if you're lucky.
-
-Click 3: Solution Introduction
-So our solution was to make this process visual.
-[指向LEGO积木可视化]
-Think of it like building with LEGO blocks. Instead of trying to describe everything in words, you simply drag and drop: Role plus Task plus Rules equals Perfect instruction.
-
-Click 4: Solution Benefits
-This approach gives you three key advantages:
-
-You drag and drop blocks instead of writing from scratch - much faster and less error-prone.
-
-You see your instruction build up in real-time as you add blocks - immediate feedback.
-
-And you can save successful combinations as templates to reuse later - no more starting over.
-
-Click 5: Differentiation Header
-But what makes ProHelen different from existing tools?
-
-Click 6: Comparison Table
-Here's the key distinction:
-[指向表格]
-While others give you just a text box and say "figure it out yourself," we provide visual building blocks, instant previews, reusable templates, and step-by-step guidance.
-
-This isn't just another prompt tool - it's a complete visual instruction system.
+差异化对比 (Click 5-6 出现时)
+But what makes ProHelen different from existing tools? Well, here's the key distinction - while others just give you a text box and say "figure it out yourself," we provide visual building blocks, instant previews, reusable templates, and step-by-step guidance. This isn't just another prompt tool - it's a complete visual instruction system.
 -->
 
 ---
 layout: default
 class: text-left
-clicks: 3
+clicks: 2
 ---
 
 <img src="./logo.png" class="fixed top-4 right-4 h-10 opacity-80" />
 
-## Tool Demo
+## Tool Walkthrough
+
+<div class="space-y-8 mt-6">
 
 <div v-click="1" v-motion
-  :initial="{ opacity: 0, scale: 0.9 }"
-  :enter="{ opacity: 1, scale: 1, transition: { duration: 600 } }"
-  class="mt-2 text-center">
-  <a href="https://www.prohelen.dev/" target="_blank" class="text-lg underline underline-offset-4 hover:opacity-80">
-    → Live Demo
-  </a>
+  :initial="{ opacity: 0, y: -30 }"
+  :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+  class="text-center">
+
+### Single User Journey: Business Consultant Template Creation
+
+**Challenge:** Inconsistent AI analysis → **Solution:** 45-second visual workflow → **Result:** Team consistency
+
+
+
 </div>
 
-## Meet Justin's Journey
+<div v-click="2" v-motion
+  :initial="{ opacity: 0, scale: 0.95 }"
+  :enter="{ opacity: 1, scale: 1, transition: { duration: 800, delay: 200 } }"
+  class="w-full">
 
-<div class="grid grid-cols-2 gap-12 mt-6">
-  <div class="space-y-6">
-    <div v-click="2" v-motion
-      :initial="{ opacity: 0, x: -50 }"
-      :enter="{ opacity: 1, x: 0, transition: { duration: 500, delay: 100 } }">
-      <div class="space-y-4">
-        <div>
-          <div class="opacity-70 text-sm">Justin, marketing manager:</div>
-          <div class="italic">"I waste hours crafting AI prompts that give inconsistent results"</div>
-        </div>
-        <div>
-          <div class="opacity-70 text-sm">Opens ProHelen, 45 seconds later:</div>
-          <div>Drags Role + Task → sees live preview → "This finally makes sense!"</div>
-        </div>
-        <div>
-          <div class="opacity-70 text-sm">Saves template:</div>
-          <div class="italic">"Now my whole team can create consistent instructions"</div>
-        </div>
-      </div>
-    </div>
-    <div v-motion
-      :initial="{ opacity: 0, x: -50 }"
-      :enter="{ opacity: 1, x: 0, transition: { duration: 500, delay: 600 } }"
-      class="italic text-sm opacity-80 border-l-2 border-gray-300 pl-3">
-      "I realized users needed immediate visual feedback, not more complexity"
-    </div>
-  </div>
+<img src="./CleanShot 2025-08-14 at 23.12.57.gif" 
+     alt="45-second workflow demonstration: Role Definition → Goal Setting → Output Format → Save Template" 
+     class="w-full max-w-2xl mx-auto rounded-lg shadow-lg border-2 border-gray-300 dark:border-gray-600" 
+     loading="lazy" />
 
-  <div class="space-y-6">
-    <div v-click="3" v-motion
-      :initial="{ opacity: 0, x: 50 }"
-      :enter="{ opacity: 1, x: 0, transition: { duration: 500 } }">
-      <div class="space-y-4">
-        <div class="text-lg font-medium">Before → After</div>
-        <div class="p-3 rounded border-l-4 border-red-400 bg-red-50 dark:bg-red-900/20">
-          <div class="text-xs opacity-70 mb-1">Before: Messy prompt</div>
-          <div class="text-sm">"Write me marketing copy that's professional but not too formal and make it engaging..."</div>
-        </div>
-        <div class="text-center text-2xl">↓</div>
-        <div class="p-3 rounded border-l-4 border-green-400 bg-green-50 dark:bg-green-900/20">
-          <div class="text-xs opacity-70 mb-1">After: Structured instruction</div>
-          <div class="text-sm">Role: Marketing copywriter<br/>Task: Create engaging product copy<br/>Format: 150 words, conversational tone</div>
-        </div>
-        <div class="text-xs italic opacity-80">
-          User feedback: "Templates save me 2 hours per week"
-        </div>
-      </div>
-    </div>
+<div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+  <div v-motion
+    :initial="{ opacity: 0, y: 20 }"
+    :enter="{ opacity: 1, y: 0, transition: { duration: 400, delay: 500 } }"
+    class="p-3 bg-green-50 dark:bg-green-900/20 rounded">
+    <div class="italic text-sm">"I can see exactly what I'm building"</div>
+    <div class="text-xs mt-1 font-medium">→ Live preview priority</div>
   </div>
+  <div v-motion
+    :initial="{ opacity: 0, y: 20 }"
+    :enter="{ opacity: 1, y: 0, transition: { duration: 400, delay: 600 } }"
+    class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded">
+    <div class="italic text-sm">"Templates give me frameworks"</div>
+    <div class="text-xs mt-1 font-medium">→ Expert guidance</div>
+  </div>
+  <div v-motion
+    :initial="{ opacity: 0, y: 20 }"
+    :enter="{ opacity: 1, y: 0, transition: { duration: 400, delay: 700 } }"
+    class="p-3 bg-purple-50 dark:bg-purple-900/20 rounded">
+    <div class="italic text-sm">"Much faster than writing prompts"</div>
+    <div class="text-xs mt-1 font-medium">→ Visual approach wins</div>
+  </div>
+</div>
+
+</div>
+
 </div>
 
 <!--
-Click 1: Demo Link
-Before I explain the technical details, let me show you how this actually works in practice.
-[指向链接]
-This is our live demo at prohelen.dev - fully functional and deployed.
+Click 1 出现时
+Let me show you how this actually works. Meet Sarah, a business consultant who was struggling with inconsistent AI analysis. Different projects were delivering different quality results, which was really hurting her business reputation. So we created a 45-second visual workflow that completely transformed how her team works. The result? Complete team consistency and professional output every time.
 
-But let me tell you a story that illustrates the real impact.
 
-Click 2: Justin's Story
-Meet Justin - he's a marketing manager who was wasting hours crafting AI prompts with inconsistent results. Sound familiar?
+Click 2 出现时 (GIF播放)
+Now watch Sarah's workflow in action. She drags Role Definition, selects Business Consultant from our presets. Then adds Goal Setting - and notice this isn't just a text box, it's a complete professional framework she wouldn't think of herself. She configures the output format while watching the live preview build her instruction in real-time. Finally, saves it as a template that her entire team can use.
 
-Here's what happened when he tried ProHelen:
-
-He opens the tool, and within just 45 seconds, he drags a Role block, adds a Task block, sees the live preview updating, and says "This finally makes sense!"
-
-Then he saves it as a template and tells his team: "Now my whole team can create consistent instructions."
-
-This story taught me something crucial: I realized that users needed immediate visual feedback, not more complexity.
-
-Click 3: Before/After Comparison
-Let me show you the transformation:
-[指向Before部分]
-Before: His prompt was a mess - "Write me marketing copy that's professional but not too formal and make it engaging..." - vague and confusing.
-
-[指向After部分]
-After: Clean, structured instruction - "Role: Marketing copywriter, Task: Create engaging product copy, Format: 150 words, conversational tone."
-
-The result? User feedback: "Templates save me 2 hours per week."
-
-This isn't just about better prompts - it's about transforming how people think about AI communication.
+We actually evolved from a text-heavy interface to this structured guidance approach. This 45-second flow represents a lot of works of user feedback and iteration.
 -->
 
 ---
 layout: default
 class: text-left
-clicks: 9
+clicks: 5
 ---
 
 <img src="./logo.png" class="fixed top-4 right-4 h-10 opacity-80" />
@@ -328,21 +271,26 @@ clicks: 9
 
 <div v-click="2">
 <ul class="space-y-2">
-  <li v-motion
-    :initial="{ opacity: 0, x: -30 }"
-    :enter="{ opacity: 1, x: 0, transition: { duration: 400, delay: 100 } }">
-    <strong>High task completion</strong> with positive feedback on layout and live preview
-  </li>
-  <li v-click="3" v-motion
-    :initial="{ opacity: 0, x: -30 }"
-    :enter="{ opacity: 1, x: 0, transition: { duration: 400, delay: 200 } }">
-    <strong>Template adoption</strong> validates block architecture scalability
-  </li>
-  <li v-click="4" v-motion
-    :initial="{ opacity: 0, x: -30 }"
-    :enter="{ opacity: 1, x: 0, transition: { duration: 400, delay: 300 } }">
-    <strong>Requests</strong>: clearer labels, global overview, richer parameter control
-  </li>
+  <li><strong>High task completion</strong> with positive feedback on layout and live preview</li>
+  <li><strong>Template adoption</strong> validates block architecture scalability</li>
+  <li><strong>Clear requests</strong>: better labels, global overview, richer controls</li>
+</ul>
+</div>
+
+</div>
+
+<div v-click="3" v-motion
+  :initial="{ opacity: 0, y: 30 }"
+  :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+  class="text-xl mt-6">
+
+### Contribution  
+
+<div v-click="4">
+<ul class="space-y-2">
+  <li><strong>Visual instruction system</strong> with 18 semantic blocks mapping structure to behavior</li>
+  <li><strong>Democratized access</strong> via guided onboarding, templates, one-click export</li>
+  <li><strong>Working prototype</strong> with full-stack architecture deployed at prohelen.dev</li>
 </ul>
 </div>
 
@@ -353,92 +301,27 @@ clicks: 9
   :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
   class="text-xl mt-6">
 
-### Contribution  
-
-<div v-click="6">
-<ul class="space-y-2">
-  <li v-motion
-    :initial="{ opacity: 0, x: -30 }"
-    :enter="{ opacity: 1, x: 0, transition: { duration: 400, delay: 100 } }">
-    <strong>Visual instruction system</strong> with 18 semantic blocks mapping structure to behavior
-  </li>
-  <li v-click="7" v-motion
-    :initial="{ opacity: 0, x: -30 }"
-    :enter="{ opacity: 1, x: 0, transition: { duration: 400, delay: 200 } }">
-    <strong>Democratized access</strong> via guided onboarding, templates, one-click export
-  </li>
-  <li v-click="8" v-motion
-    :initial="{ opacity: 0, x: -30 }"
-    :enter="{ opacity: 1, x: 0, transition: { duration: 400, delay: 300 } }">
-    <strong>Working prototype</strong> with full-stack architecture deployed at prohelen.dev
-  </li>
-</ul>
-</div>
-
-</div>
-
-<div v-click="9" v-motion
-  :initial="{ opacity: 0, y: 30 }"
-  :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-  class="text-xl mt-6">
-
 ### What's Next
 
 <div>
 <ul class="space-y-2">
-  <li v-motion
-    :initial="{ opacity: 0, x: -30 }"
-    :enter="{ opacity: 1, x: 0, transition: { duration: 400, delay: 100 } }">
-    <strong>AI-assisted refinement</strong> with embedded models per block
-  </li>
-  <li v-motion
-    :initial="{ opacity: 0, x: -30 }"
-    :enter="{ opacity: 1, x: 0, transition: { duration: 400, delay: 200 } }">
-    <strong>Community platform</strong> for custom blocks, templates, sharing
-  </li>
-  <li v-motion
-    :initial="{ opacity: 0, x: -30 }"
-    :enter="{ opacity: 1, x: 0, transition: { duration: 400, delay: 300 } }">
-    <strong>Real-time collaboration</strong> and mobile optimization
-  </li>
+  <li><strong>AI-assisted refinement</strong> with embedded models per block</li>
+  <li><strong>Community platform</strong> for custom blocks, templates, sharing</li>
+  <li><strong>Real-time collaboration</strong> and mobile optimization</li>
 </ul>
 </div>
 
 </div>
 
 <!--
-Click 1-2: Findings Introduction
-So what did we discover through user testing and deployment?
+Click 1-2: Findings
+So what did we discover? Three key findings: high task completion with positive feedback on layout and live preview. Strong template adoption validated our block architecture scalability. And users gave specific, actionable requests - better labels, global overview, richer controls. These weren't complaints, they were our roadmap.
 
-Click 3-4: Specific Findings
-Three key findings emerged:
+Click 3-4: Contribution 
+Our main contributions: We created a visual instruction system with 18 semantic blocks that directly map structure to AI behavior - the first to make this connection explicit. We democratized prompt engineering through guided templates and one-click export - making professional instruction building accessible to everyone. And we delivered a working prototype deployed at prohelen.dev - a real system people are actually using.
 
-First, we achieved high task completion rates with consistently positive feedback on the layout and live preview functionality.
-
-Second, strong template adoption validated that our block architecture is scalable and genuinely useful.
-
-Third, user requests focused on clearer labels, better global overview, and richer parameter control - all actionable improvements.
-
-Click 5-6: Contribution Header & Details
-Based on these findings, here are our main contributions to the field:
-
-Click 7-8: Specific Contributions
-We created a visual instruction system with 18 semantic blocks that directly map interface structure to AI behavior.
-
-We democratized access to effective prompt engineering through guided onboarding, ready-made templates, and one-click export functionality.
-
-And we delivered a working prototype with full-stack architecture, deployed and accessible at prohelen.dev.
-
-Click 9: Future Work
-Looking ahead, we see three exciting directions:
-
-AI-assisted refinement with embedded models that can suggest improvements for each block type.
-
-A community platform where users can create custom blocks, share templates, and collaborate.
-
-And real-time collaboration features with mobile optimization for on-the-go instruction building.
-
-This work opens up entirely new possibilities for human-AI interaction design.
+Click 5: What's Next 
+Looking ahead: AI-assisted refinement with embedded models per block. Community platform for sharing custom blocks and templates. Real-time collaboration with mobile optimization. This opens new possibilities for human-AI interaction - we're just getting started.
 -->
 
 ---
