@@ -163,19 +163,19 @@ clicks: 6
 
 <!--
 开场 (Click 1 出现时)
-Let me start with the fundamental problem we're solving. Most people struggle to tell AI exactly what they want. Look at this communication gap here - you have a clear idea in your head, but there's this massive disconnect between your intention and what the AI actually delivers.
+Let me start with the fundamental problem we're solving. Most people struggle to tell AI exactly what they want. Look at this communication gap here - you have a clear idea in your head, but there’s a big gap between what you want and what the AI gives you.
 
 问题分析 (Click 2 出现时)
-Why does this happen? Well, there are three main reasons. First, you know what you want but not how to ask for it. Second, you're missing all the specifics - what tone should it use? What format? What constraints? And third, it just becomes this endless cycle of trial and error until something finally works.
+Why does this happen? Well, there are three main reasons. First, you know what you want but not how to ask for it. Second, you're missing all the specifics - what tone should it use? What format? What constraints? And third, it just becomes this endless cycle of trial and error until something works.
 
 解决方案介绍 (Click 3 出现时)
-So our solution was to make this entire process visual. Think of it like building with LEGO blocks - instead of trying to describe everything in words, you simply drag and drop: Role plus Task plus Rules equals your perfect instruction.
+So our solution was to make this entire process visual. Think of it like building with LEGO blocks - instead of trying to describe everything in words, you just drag and drop to get the perfect prompt.
 
 优势说明 (Click 4 出现时)
-This gives you three key advantages: you can drag and drop blocks instead of writing from scratch, you see your instruction building up in real-time, and you can save successful combinations as templates for later use.
+This gives you three key advantages: you can drag and drop blocks instead of writing from empty, you see your instruction building up in real-time, and you can save successful combinations as templates for later use.
 
 差异化对比 (Click 5-6 出现时)
-But what makes ProHelen different from existing tools? Well, here's the key distinction - while others just give you a text box and say "figure it out yourself," we provide visual building blocks, instant previews, reusable templates, and step-by-step guidance. This isn't just another prompt tool - it's a complete visual instruction system.
+But what makes ProHelen different from existing tools? Well, here's the key distinction - while others just give you a text box and say "figure it out yourself," we provide visual building blocks, instant previews, reusable templates, and step-by-step guidance. In short, ProHelen makes prompt creation easier, faster.
 -->
 
 ---
@@ -195,7 +195,7 @@ clicks: 2
   :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
   class="text-center">
 
-### Single User Journey: Business Consultant Template Creation
+### Single User Journey: Emma's Business Consultant Template Creation
 
 **Challenge:** Inconsistent AI analysis → **Solution:** 45-second visual workflow → **Result:** Team consistency
 
@@ -243,13 +243,16 @@ clicks: 2
 
 <!--
 Click 1 出现时
-Let me show you how this actually works. Meet Sarah, a business consultant who was struggling with inconsistent AI analysis. Different projects were delivering different quality results, which was really hurting her business reputation. So we created a 45-second visual workflow that completely transformed how her team works. The result? Complete team consistency and professional output every time.
+Let me show you how this works. Meet Emma, a business consultant who is upset about AI giving different results. We made her a 45-second visual workflow that changed her team’s work, giving consistent and professional results every time.
 
 
 Click 2 出现时 (GIF播放)
-Now watch Sarah's workflow in action. She drags Role Definition, selects Business Consultant from our presets. Then adds Goal Setting - and notice this isn't just a text box, it's a complete professional framework she wouldn't think of herself. She configures the output format while watching the live preview build her instruction in real-time. Finally, saves it as a template that her entire team can use.
+Now let’s take a look at Emma’s workflow. She first drags in “Role Definition” and selects “Business Consultant” from the presets. Then she adds “Goal Setting” – this isn’t just a regular text box, but a complete professional framework. After that she sets the output format and views a live preview on the right. Finally, she saves it as a template that her entire team can use.
 
-We actually evolved from a text-heavy interface to this structured guidance approach. This 45-second flow represents a lot of works of user feedback and iteration.
+This workflow gave us valuable user feedback. [指向三个反馈卡片] These insights shaped our design. Users said:
+- "I can see exactly what I'm building" – confirming live preview is key.
+- "Templates give me frameworks I wouldn't think of" – showing expert guidance matters.
+- "Much faster than writing prompts" – proving the visual approach works.
 -->
 
 ---
@@ -290,7 +293,7 @@ clicks: 5
 <ul class="space-y-2">
   <li><strong>Visual instruction system</strong> with 18 semantic blocks mapping structure to behavior</li>
   <li><strong>Democratized access</strong> via guided onboarding, templates, one-click export</li>
-  <li><strong>Working prototype</strong> with full-stack architecture deployed at prohelen.dev</li>
+  <li><strong>Working prototype</strong> with full-stack architecture deployed at <a href="https://prohelen.dev" target="_blank" class="text-blue-500 hover:text-blue-600">prohelen.dev</a></li>
 </ul>
 </div>
 
@@ -318,10 +321,10 @@ Click 1-2: Findings
 So what did we discover? Three key findings: high task completion with positive feedback on layout and live preview. Strong template adoption validated our block architecture scalability. And users gave specific, actionable requests - better labels, global overview, richer controls. These weren't complaints, they were our roadmap.
 
 Click 3-4: Contribution 
-Our main contributions: We created a visual instruction system with 18 semantic blocks that directly map structure to AI behavior - the first to make this connection explicit. We democratized prompt engineering through guided templates and one-click export - making professional instruction building accessible to everyone. And we delivered a working prototype deployed at prohelen.dev - a real system people are actually using.
+Our main contributions: We created a visual instruction system with 18 building blocks that directly map structure to AI behavior. We democratized prompt engineering through guided templates and one-click export - making professional instruction building accessible to everyone. And we delivered a working prototype deployed at prohelen.dev.
 
 Click 5: What's Next 
-Looking ahead: AI-assisted refinement with embedded models per block. Community platform for sharing custom blocks and templates. Real-time collaboration with mobile optimization. This opens new possibilities for human-AI interaction - we're just getting started.
+Looking ahead: I hope to embed AI models within each block for intelligent optimization, build a community platform for users to co-create high-quality prompts, and support real-time collaboration. This opens up entirely new possibilities for human-AI interaction—and this is just the beginning.
 -->
 
 ---
