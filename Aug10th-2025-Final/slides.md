@@ -90,6 +90,13 @@ clicks: 6
 
 **Most people struggle to tell AI exactly what they want**
 
+<div class="mt-4 p-3 bg-gray-50 dark:bg-gray-800 rounded text-sm">
+  <div class="text-red-600 dark:text-red-400 font-medium">❌ Typical attempt:</div>
+  <div class="italic">"Write me a good email"</div>
+  <div class="text-green-600 dark:text-green-400 font-medium mt-2">✅ With ProHelen:</div>
+  <div class="text-xs">Role: Professional | Task: Email | Tone: Formal | Length: Brief</div>
+</div>
+
 </div>
 
 <div v-click="2">
