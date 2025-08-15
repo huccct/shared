@@ -217,14 +217,14 @@ clicks: 2
 
 <div class="w-full max-w-2xl mx-auto">
   <video 
-    src="./CleanShot 2025-08-15 at 11.03.26.mp4" 
+    src="./CleanShot 2025-08-15 at 12.30.31.mp4" 
     class="w-full rounded-lg shadow-lg border-2 border-gray-300 dark:border-gray-600"
     controls
     autoplay
     muted
     loop
     preload="metadata">
-    <source src="./CleanShot 2025-08-15 at 11.03.26.mp4" type="video/mp4">
+    <source src="./CleanShot 2025-08-15 at 12.30.31.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
@@ -259,7 +259,7 @@ clicks: 2
 
 <!--
 Click 1 出现时
-Let me show you how this works. Meet Emma, a business consultant who is upset about AI giving different results. We made her a 45-second visual workflow that changed her team’s work, giving consistent and professional results every time.
+Let me show you how this works. Meet Emma, a business consultant frustrated with AI giving different answers. We made her a 45-second visual workflow that changed her team’s work, giving consistent, professional results every time.
 
 
 Click 2 出现时 (GIF播放)
