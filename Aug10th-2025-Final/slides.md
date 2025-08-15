@@ -215,10 +215,19 @@ clicks: 2
   :enter="{ opacity: 1, scale: 1, transition: { duration: 800, delay: 200 } }"
   class="w-full">
 
-<img src="./CleanShot 2025-08-14 at 23.12.57.gif" 
-     alt="45-second workflow demonstration: Role Definition → Goal Setting → Output Format → Save Template" 
-     class="w-full max-w-2xl mx-auto rounded-lg shadow-lg border-2 border-gray-300 dark:border-gray-600" 
-     loading="lazy" />
+<div class="w-full max-w-2xl mx-auto">
+  <video 
+    src="./CleanShot 2025-08-15 at 11.03.26.mp4" 
+    class="w-full rounded-lg shadow-lg border-2 border-gray-300 dark:border-gray-600"
+    controls
+    autoplay
+    muted
+    loop
+    preload="metadata">
+    <source src="./CleanShot 2025-08-15 at 11.03.26.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
   <div v-motion
