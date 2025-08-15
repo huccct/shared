@@ -330,6 +330,12 @@ clicks: 5
 </ul>
 </div>
 
+<div class="mt-8 text-center">
+<div class="text-lg italic text-gray-700 dark:text-gray-300 font-bold">
+"This opens up entirely new possibilities for human-AI interaction—and this is just the beginning."
+</div>
+</div>
+
 </div>
 
 <!--
